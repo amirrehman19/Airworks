@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering the gallery */
+.gallery-section {
+    text-align:;
+    margin-bottom: 20px;
+}
+
+.gallery-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4757; /* Same as close button */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Flexible Image Layout */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
+/* Image container with fixed size */
+.image-container {
+   width: calc(50% - 5px); /* Ensure two images per row */
+    max-width: 800px; /* Restrict max width */
+    height: auto; /* Allow natural height */
+    overflow: hidden;
+    cursor: pointer;
+    border: 5px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 5px; /* Inner spacing */
+    background-color: white;
+}
+
+/* Images adjust to fit container */
+.thumbnail {
+     width: 100%;
+    height: auto; /* Let it maintain aspect ratio */
+    object-fit: contain; /* Prevent cutting */
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+/* Full-Screen Overlay */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Dark background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Enlarged Image Container */
+#enlarged-container {
+    background: none;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 90vw; /* Max width for mobile */
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Scrollable Content Wrapper */
+#content-wrapper {
+    max-height: 60vh; /* Keep inside screen */
+    overflow-y: auto; /* Enable scrolling */
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+/* Enlarged Image */
+#enlarged-img {
+    max-width: 100%;
+    max-height: 50vh; /* Responsive height */
+    border-radius: 5px;
+}
+
+/* Image Details */
+#image-details {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for readability */
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 90vw;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+/* Close Button */
+#close-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;  /* Full width for mobile */
+    max-width: 150px; /* Restrict width */
+    position: relative;
+    bottom: 0;
+}
+
+#close-btn:hover {
+    background: #ff6b81;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 600px) {
+    .gallery {
+        flex-direction: column; /* Stack images */
+        align-items: center;
+    }
+
+    .image-container {
+        width: 100%; /* Make images full width on mobile */
+        max-width: 90%; /* Keep spacing */
+    }
+
+    #enlarged-container {
+        max-width: 95vw;
+        max-height: 90vh;
+    }
+
+    #image-details {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #close-btn {
+        max-width: 120px;
+        padding: 8px 15px;
+    }
+}

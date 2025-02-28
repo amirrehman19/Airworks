@@ -1,0 +1,100 @@
+
+<!--    </div>-->
+
+<!--    &lt;!&ndash; Include Footer &ndash;&gt;-->
+
+
+<!--    &lt;!&ndash; Overlay for Enlarged Image &ndash;&gt;-->
+<!--    <div id="overlay">-->
+<!--        <div id="enlarged-container">-->
+<!--            <img id="enlarged-img" src="" alt="Enlarged Image">-->
+<!--            <p id="image-details"></p>-->
+<!--            <button id="close-btn">Close</button>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; Scripts &ndash;&gt;-->
+<!--    <script src="{{ url_for('static', filename='js/gallery.js') }}"></script>-->
+
+
+
+{% include "header.html" %}
+
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('../static/assets/img/img_2.png')">
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="page-heading">
+          <h1>Image Gallery</h1>
+          <span class="subheading">Explore our collection</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Main Content -->
+<main class="mb-4">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+
+        <!-- Gallery Section -->
+        <!-- Gallery Section -->
+<div class="gallery-section">
+  <h2 class="gallery-heading">Our Jets i</h2>
+  <div class="gallery">
+    <div class="image-container">
+      <img src="{{ url_for('static', filename='images/img_5.png') }}" alt="Image 5" class="thumbnail" data-details="we went to turkey and blahh baljhhsaodhcnakjdnsakvjnksanvkdjnaskjvnkjsnavkjnsakjnkjan aye samosasdlakfnclsndcsnkvnskavdnkjsnavlknosanvl nsandvlk fnajjgskunshfekd hgushsiuhbsiodvyhiueryhciosciherfy">
+    </div>
+    <div class="image-container">
+      <img src="{{ url_for('static', filename='images/img_6.png') }}" alt="Image 6" class="thumbnail" data-details="Details about Image 2">
+    </div>
+    <div class="image-container">
+      <img src="{{ url_for('static', filename='images/img_7.png') }}" alt="Image 7" class="thumbnail" data-details="Details about Image 3">
+    </div>
+     <div class="image-container">
+      <img src="{{ url_for('static', filename='images/img_8.png') }}" alt="Image 8" class="thumbnail" data-details="we went to turkey and blahh baljhhsaodhcnakjdnsakvjnksanvkdjnaskjvnkjsnavkjnsakjnkjan aye samosasdlakfnclsndcsnkvnskavdnkjsnavlknosanvl nsandvlk fnajjgskunshfekd hgushsiuhbsiodvyhiueryhciosciherfy">
+    </div>
+  </div>
+</div>
+
+
+<div class="gallery-section">
+  <h2 class="gallery-heading">Our sponsors</h2>
+  <div class="gallery">
+    <div class="image-container">
+      <img src="{{ url_for('static', filename='images/image1.jpg') }}" alt="Image 1" class="thumbnail" data-details="we went to turkey and blahh baljhhsaodhcnakjdnsakvjnksanvkdjnaskjvnkjsnavkjnsakjnkjan aye samosasdlakfnclsndcsnkvnskavdnkjsnavlknosanvl nsandvlk fnajjgskunshfekd hgushsiuhbsiodvyhiueryhciosciherfy">
+    </div>
+    <div class="image-container">
+      <img src="{{ url_for('static', filename='images/image2.jpg') }}" alt="Image 2" class="thumbnail" data-details="Details about Image 2">
+    </div>
+    <div class="image-container">
+      <img src="{{ url_for('static', filename='images/image3.jpg') }}" alt="Image 3" class="thumbnail" data-details="Details about Image 3">
+    </div>
+    <div class="image-container">
+      <img src="{{ url_for('static', filename='images/image3.jpg') }}" alt="Image 3" class="thumbnail" data-details="Details about Image 3">
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</main>
+
+<!-- Overlay for Enlarged Image -->
+<div id="overlay">
+  <div id="enlarged-container">
+    <div id="content-wrapper">
+      <img id="enlarged-img" src="" alt="Enlarged Image">
+      <p id="image-details"></p>
+    </div>
+    <button id="close-btn">Close</button>
+  </div>
+</div>
+
+{% include "footer.html" %}
+
+<!-- Scripts -->
+<script src="{{ url_for('static', filename='js/gallery.js') }}"></script>
