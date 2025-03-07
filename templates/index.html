@@ -26,7 +26,7 @@
           <h3 class="post-subtitle">{{ post.subtitle }}</h3>
         </a>
         <p class="post-meta">
-          Led by <a href="#">{{ post.author }}</a> from {{ post.date }}
+           <a href="#">{{ post.author }}</a> from {{ post.date }}
 
           {% if is_admin %}
           <a href="{{ url_for('delete_post', post_id=post.id) }}">✘</a>
@@ -45,9 +45,7 @@
       {% endif %}
 
       <!-- Pager-->
-      <div class="d-flex justify-content-end mb-4">
-        <a class="btn btn-secondary text-uppercase" href="#!">Older Posts →</a>
-      </div>
+
     </div>
   </div>
 </div>

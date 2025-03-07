@@ -11,12 +11,17 @@ body {
 }
 
 .gallery-heading {
-    font-size: 24px;
+    font-size: 42px;
     font-weight: bold;
-    color: #ff4757; /* Same as close button */
-    margin-bottom: 15px;
+    color: black    ; /* Darker shade for better contrast */
+    margin-bottom: 20px;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 10px;
 }
+
 
 /* Flexible Image Layout */
 .gallery {

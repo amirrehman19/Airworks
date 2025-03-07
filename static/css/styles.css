@@ -10796,3 +10796,21 @@ header.masthead .post-heading .meta a {
     font-size: 2.25rem;
   }
 }
+@keyframes blinking {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blinking-text {
+    animation: blinking 1s infinite;
+    font-size: 42px;
+    font-weight: bold;
+    color: black; /* Red color for urgency, change if needed */
+    text-transform: uppercase;
+}
+#timer {
+    font-weight: bold;
+    color: #000; /* Black color for better visibility */
+    margin-left: 10px;
+}

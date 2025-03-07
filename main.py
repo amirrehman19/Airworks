@@ -214,4 +214,4 @@ def contact():
     return render_template("contact.html")
 
 if __name__ == "__main__":
-    app.run(host='192.168.1.114',debug=True,port=5002)
+    app.run(host='172.16.32.88',debug=True,port=5002)

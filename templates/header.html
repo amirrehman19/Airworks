@@ -12,11 +12,8 @@
     {% block styles %}
     <!-- Load Bootstrap-Flask CSS here -->
     {{ bootstrap.load_css() }}
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="{{ url_for('static', filename='assets/favicon.ico') }}"
-    />
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/logo6.png') }}" sizes="192x192">
+
 
     <!-- Font Awesome icons (free version)-->
     <script
@@ -88,7 +85,7 @@
               <a
                 class="nav-link px-lg-3 py-3 py-lg-4"
                 href="{{ url_for('get_all_posts') }}"
-                >Departments</a
+                >Team</a
               >
             </li>
 
@@ -96,7 +93,7 @@
               <a
                 class="nav-link px-lg-3 py-3 py-lg-4"
                 href="{{ url_for('contact') }}"
-                >Contact</a
+                >Apply</a
               >
             </li>
           </ul>
