@@ -57,11 +57,11 @@ with app.app_context():
     db.create_all()
 
 
-with app.app_context():
-    post = BlogPost.query.get(5)  # Fetch post with id=3
-    if post:
-        post.img_url = "sw.png"  # Update img_url
-        db.session.commit()
+# with app.app_context():
+#     post = BlogPost.query.get(5)  # Fetch post with id=3
+#     if post:
+#         post.img_url = "sw.png"  # Update img_url
+#         db.session.commit()
 # WTForm
 
 
